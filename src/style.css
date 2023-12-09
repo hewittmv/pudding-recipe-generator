@@ -102,6 +102,7 @@ form {
   width: 55%;
   height: 200px;
   transform-style: preserve-3d;
+
   animation: rotate 30s linear infinite;
 }
 .rotator:hover {
@@ -120,6 +121,7 @@ form {
   height: 100%;
   width: 100%;
   overflow: hidden;
+
   -webkit-box-reflect: below 2px
     linear-gradient(transparent, transparent, #0005);
 }
@@ -127,8 +129,8 @@ form {
   transform: scale(1.2);
 }
 .items img {
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   transition: all 3s ease;
   border-radius: 10px;
   border-style: solid;
