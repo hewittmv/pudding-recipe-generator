@@ -101,21 +101,18 @@ form {
   margin: auto;
   width: 55%;
   height: 200px;
-  transform-origin: center;
   transform-style: preserve-3d;
-  animation: roter 25s linear infinite;
-  -webkit-box-reflect: below 2px
-    linear-gradient(transparent, transparent, #0005);
+  animation: rotate 30s linear infinite;
 }
 .rotator:hover {
   animation-play-state: paused;
 }
-@keyframes roter {
-  from {
-    transform: rotateY(0deg);
+@keyframes rotate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
   }
-  to {
-    transform: rotateY(360deg);
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
   }
 }
 .items {
@@ -123,13 +120,15 @@ form {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  -webkit-box-reflect: below 2px
+    linear-gradient(transparent, transparent, #0005);
 }
 .items:hover img {
   transform: scale(1.2);
 }
 .items img {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   transition: all 3s ease;
   border-radius: 10px;
   border-style: solid;
