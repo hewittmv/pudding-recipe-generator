@@ -3,35 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Josefin+Slab:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f024febd61.js"
+      crossorigin="anonymous"
+    ></script>
     <title>AI Pudding Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Pudding Recipe Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Find a pudding recipe"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>Poem to sit here</div>
-    </main>
-    <footer>
-      AI Pudding Recipe Generator coded by Victoria Marsh
-      <a
-        href="https://github.com/hewittmv/pudding-recipe-generator"
-        target="_blank"
-        >Github</a
-      >
-      <a href="https://incomparable-llama-cbdbcd.netlify.app/">Netlify</a>
-    </footer>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="https://www.shecodes.io/graduates/65535-victoria-hewitt-marsh"
+              class="underline"
+              >SheCodes
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://joyful-zuccutto-7d5dd3.netlify.app/portfolio"
+              class="underline"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/hewittmv/pudding-recipe-generator"
+              class="underline"
+              target="_blank"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://app.netlify.com/teams/hewittmv/sites"
+              class="underline"
+              target="_blank"
+              >Netlify</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <header>
+        <h1>Pudding Recipe Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Find a pudding recipe"
+            autofocus
+            required
+            autocomplete="off"
+            class="search-field"
+            style="color: #1ba098"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+        <div class="poem-container">Pudding to sit here</div>
+      </main>
+      <footer>
+        AI Pudding Recipe Generator coded by Victoria Marsh
+        <a
+          href="https://github.com/hewittmv/pudding-recipe-generator"
+          target="_blank"
+          ><i class="fa-brands fa-github" style="color: #1ba098"></i
+        ></a>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
