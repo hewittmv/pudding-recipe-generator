@@ -22,6 +22,10 @@ a {
   color: #deb992;
   text-decoration: none;
   font-size: 2rem;
+}
+.search-field,
+.search-button,
+a {
   cursor: pointer;
 }
 
@@ -40,6 +44,8 @@ h1 {
   border-width: 0.5px;
   border-color: #deb992;
   min-height: 600px;
+  font-size: 1.5rem;
+  padding: 20px;
 }
 .underline {
   display: inline;
