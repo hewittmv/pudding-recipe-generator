@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>AI Pudding Generator</title>
   </head>
   <body>
@@ -57,43 +58,37 @@
         <h1>Pudding Recipe Generator</h1>
         <div class="rotator">
           <div class="items">
+            <img src="/src/images/cremebrulee.jpg" alt="creme brulee pudding" />
+          </div>
+          <div class="items">
+            <img src="/src/images/pear.jpg" alt="poached pear pudding" />
+          </div>
+          <div class="items">
             <img
-              src="/src/images/Panna Cotta Mango Agar IMG_20210821_152321.jpg"
-              alt="Image Alt"
+              src="/src/images/appleturnover.jpg"
+              alt="apple turnover pudding"
             />
           </div>
           <div class="items">
             <img
-              src="/src/images/Banana Frozen Lotus Sandwich IMG_20210624_200422.jpg"
-              alt="Image Alt"
+              src="/src/images/Mango.jpg"
+              alt="panna cotta pudding with mango compote"
+            />
+          </div>
+          <div class="items">
+            <img src="/src/images/cheesecake.jpg" alt="vanilla cheesecake" />
+          </div>
+          <div class="items">
+            <img
+              src="/src/images/choccheesecake.jpg"
+              alt="chocolate cheesecake"
             />
           </div>
           <div class="items">
             <img
-              src="/src/images/Chocolate Caramel Tart Agar Agar IMG_20210814_200851.jpg"
-              alt="Image Alt"
+              src="/src/images/tart.jpg"
+              alt="chocolate tart with pomegranate seeds"
             />
-          </div>
-          <div class="items">
-            <img src="/src/images/IMG_20210824_191407.jpg" alt="Image Alt" />
-          </div>
-          <div class="items">
-            <img src="/src/images/IMG_20210928_194548.jpg" alt="Image Alt" />
-          </div>
-          <div class="items">
-            <img src="/src/images/IMG_20211001_132158.jpg" alt="Image Alt" />
-          </div>
-          <div class="items">
-            <img
-              src="/src/images/Cheesecake Chocolate Orange IMG_20210702_203057.jpg"
-              alt="Image Alt"
-            />
-          </div>
-          <div class="items">
-            <img src="/src/images/IMG_20210618_211712.jpg" alt="Image Alt" />
-          </div>
-          <div class="items">
-            <img src="/src/images/IMG_20211024_165328.jpg" alt="Image Alt" />
           </div>
         </div>
       </header>
@@ -107,6 +102,7 @@
             autocomplete="off"
             class="search-field"
             style="color: #1ba098"
+            id="user-input"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>

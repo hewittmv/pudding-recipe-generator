@@ -164,9 +164,3 @@ form {
 .items:nth-child(7) {
   transform: rotateY(calc(40deg * 7)) translateZ(300px);
 }
-.items:nth-child(8) {
-  transform: rotateY(calc(40deg * 8)) translateZ(300px);
-}
-.items:nth-child(9) {
-  transform: rotateY(calc(40deg * 9)) translateZ(300px);
-}
