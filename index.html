@@ -14,6 +14,7 @@
       src="https://kit.fontawesome.com/f024febd61.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Pudding Generator</title>
   </head>
   <body>
@@ -97,7 +98,7 @@
         </div>
       </header>
       <main>
-        <form>
+        <form id="pudding-recipe-form">
           <input
             type="text"
             placeholder="Find a pudding recipe"
@@ -109,7 +110,7 @@
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
-        <div class="poem-container">Pudding to sit here</div>
+        <div id="recipe-container"></div>
       </main>
       <footer>
         AI Pudding Recipe Generator coded by Victoria Marsh

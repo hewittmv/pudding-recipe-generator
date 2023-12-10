@@ -34,7 +34,7 @@ h1 {
   max-width: 950px;
   margin: 120px auto;
 }
-.poem-container {
+#recipe-container {
   margin-top: 5%;
   border-style: solid;
   border-width: 0.5px;
