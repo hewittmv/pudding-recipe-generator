@@ -76,22 +76,23 @@ footer {
   text-align: center;
 }
 .search-field,
-.search-button {
-  border-radius: 10px;
-  border-width: 0.4px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  background: transparent;
-  border-color: #1ba098;
-  border-style: solid;
-  color: #1ba098;
-  font-family: "Josefin Slab", serif;
-}
+.search-button,
 .button-border {
   border-radius: 10px;
   border-color: #1ba098;
   border-style: solid;
   color: #1ba098;
+}
+
+.search-field,
+.search-button {
+  border-width: 0.4px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: transparent;
+  font-family: "Josefin Slab", serif;
+}
+.button-border {
   padding: 4px 5px;
 }
 .button-border:hover {
@@ -116,7 +117,7 @@ footer {
 form {
   display: flex;
   justify-content: center;
-  margin-top: 30%;
+  margin-top: 40%;
 }
 .rotator {
   position: absolute;
