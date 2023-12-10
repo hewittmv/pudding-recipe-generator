@@ -87,13 +87,31 @@ footer {
   color: #1ba098;
   font-family: "Josefin Slab", serif;
 }
+.button-border {
+  border-radius: 10px;
+  border-color: #1ba098;
+  border-style: solid;
+  color: #1ba098;
+  padding: 4px 5px;
+}
+.button-border:hover {
+  background: rgb(5, 22, 34);
+  background: linear-gradient(
+    356deg,
+    rgba(5, 22, 34, 1) 48%,
+    rgba(27, 160, 152, 1) 72%
+  );
+}
+.search-button:hover {
+  background: #051622;
+}
 .search-field {
   width: 300px;
   margin-right: 2%;
   padding-left: 2%;
 }
 .search-button {
-  padding: 15px 12px;
+  padding: 10px 12px;
 }
 form {
   display: flex;
