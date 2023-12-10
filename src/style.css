@@ -4,6 +4,7 @@ body {
   color: #deb992;
 }
 nav {
+  display: flex;
   border-bottom: 1px solid #deb992;
   background: #051622;
   padding: 1rem 0;
@@ -12,16 +13,23 @@ nav {
   left: 0;
   width: 100%;
 }
-
-ul {
-  display: flex;
+nav ul {
   list-style: none;
+  display: flex;
+  width: 100%;
   justify-content: space-evenly;
+  margin-right: 5%;
+  padding: 0;
 }
 a {
   color: #deb992;
   text-decoration: none;
   font-size: 2rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .search-field,
 .search-button,
@@ -36,26 +44,21 @@ h1 {
   margin-top: 10%;
 }
 .container {
-  max-width: 90%;
-}
-#pud-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
+
 #recipe-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 5%;
   border-style: solid;
   border-width: 0.5px;
   border-color: #deb992;
   min-height: 600px;
-  min-width: 800px;
+  min-width: 900px;
   font-size: 1.5rem;
   padding: 20px;
   max-width: 80%;
+  margin-top: 3%;
 }
 .underline {
   display: inline;
@@ -81,7 +84,7 @@ h1 {
   right: 0;
 }
 footer {
-  margin-top: 3%;
+  margin: 3%;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -130,6 +133,7 @@ form {
   justify-content: center;
   align-items: center;
   margin-top: 4%;
+  padding: 10px;
 }
 .gallery {
   display: flex;
@@ -152,6 +156,7 @@ img {
   border-style: solid;
   border-color: #deb992;
   border-width: 0.4px;
+  margin-bottom: 5%;
 }
 
 .image-overlay {
@@ -183,4 +188,75 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
   text-shadow: 1px 1px 2px #051622;
+}
+@media (max-width: 430px) {
+  nav ul {
+    margin: 0;
+  }
+  a {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    margin-top: 18%;
+  }
+  img,
+  .image-overlay,
+  .image-container {
+    width: 60px;
+    height: 60px;
+  }
+  .image-text {
+    display: none;
+  }
+  .search-field {
+    width: 100%;
+  }
+
+  #recipe-container {
+    min-width: 350px;
+  }
+  #image-6 {
+    display: none;
+  }
+}
+@media (max-width: 280px) {
+  .gallery {
+    display: none;
+  }
+  form {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .search-field {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  h1 {
+    margin-top: 25%;
+  }
+  a {
+    font-size: 1rem;
+    padding-right: 10px;
+  }
+  nav ul {
+    justify-content: center;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  #image-5,
+  #image-6 {
+    display: none;
+  }
+  h1 {
+    margin-top: 15%;
+  }
+}
+@media (min-width: 430px) and (max-width: 540px) {
+  h1 {
+    margin-top: 20%;
+    font-size: 2.5rem;
+  }
 }
