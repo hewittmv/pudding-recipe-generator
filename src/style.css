@@ -202,14 +202,15 @@ img {
     margin-top: 18%;
   }
   img,
-  .image-overlay,
   .image-container {
     width: 60px;
     height: 60px;
   }
-  .image-text {
+  .image-text,
+  .image-overlay {
     display: none;
   }
+
   .search-field {
     width: 100%;
   }
