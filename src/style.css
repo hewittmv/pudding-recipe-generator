@@ -34,7 +34,6 @@ h1 {
   font-size: 4rem;
   text-align: center;
   margin-top: 10%;
-  margin-bottom: 10%;
 }
 .container {
   max-width: 90%;
@@ -48,7 +47,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin: 5%;
   border-style: solid;
   border-width: 0.5px;
   border-color: #deb992;
@@ -126,43 +125,18 @@ footer {
 .search-button {
   padding: 10px 12px;
 }
-
 form {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30%;
+  margin-top: 4%;
 }
-.rotator {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 55%;
-  height: 200px;
-  transform-style: preserve-3d;
-
-  animation: rotate 30s linear infinite;
-}
-.rotator:hover {
-  animation-play-state: paused;
-}
-@keyframes rotate {
-  0% {
-    transform: perspective(1000px) rotateY(0deg);
-  }
-  100% {
-    transform: perspective(1000px) rotateY(360deg);
-  }
-}
-.items {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-
-  -webkit-box-reflect: below 2px
-    linear-gradient(transparent, transparent, #0005);
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2%;
 }
 .items:hover img {
   transform: scale(1.2);
@@ -170,42 +144,8 @@ form {
 .items img {
   height: 130px;
   width: 130px;
-  transition: all 3s ease;
   border-radius: 10px;
   border-style: solid;
   border-color: #deb992;
   border-width: 0.4px;
-}
-.items:first-child {
-  transform: rotateY(calc(40deg * 1)) translateZ(300px);
-}
-.items:nth-child(2) {
-  transform: rotateY(calc(40deg * 2)) translateZ(300px);
-}
-.items:nth-child(3) {
-  transform: rotateY(calc(40deg * 3)) translateZ(300px);
-}
-.items:nth-child(4) {
-  transform: rotateY(calc(40deg * 4)) translateZ(300px);
-}
-.items:nth-child(5) {
-  transform: rotateY(calc(40deg * 5)) translateZ(300px);
-}
-.items:nth-child(6) {
-  transform: rotateY(calc(40deg * 6)) translateZ(300px);
-}
-.items:nth-child(7) {
-  transform: rotateY(calc(40deg * 7)) translateZ(300px);
-}
-@media (max-width: 430px) {
-  h1 {
-    font-size: 2rem;
-  }
-  .items img {
-    height: 60px;
-    width: 60px;
-  }
-  a {
-    font-size: 1.2rem;
-  }
 }
