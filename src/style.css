@@ -203,8 +203,8 @@ img {
   }
   img,
   .image-container {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
   }
   .image-text,
   .image-overlay {
@@ -221,6 +221,18 @@ img {
   #image-6,
   #image-5 {
     display: none;
+  }
+  form {
+    flex-direction: column;
+  }
+  .search-field {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 @media (max-width: 280px) {
