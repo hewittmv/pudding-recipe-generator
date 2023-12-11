@@ -1,6 +1,6 @@
 function displayRecipe(response) {
   new Typewriter("#recipe-container", {
-    strings: [response.data.anwer],
+    strings: [response.data.answer],
     autoStart: true,
     delay: 10,
     cursor: "",
