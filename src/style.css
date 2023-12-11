@@ -12,6 +12,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 nav ul {
   list-style: none;
@@ -53,11 +54,11 @@ h1 {
   border-style: solid;
   border-width: 0.5px;
   border-color: #deb992;
-  min-height: 600px;
-  min-width: 900px;
+  min-height: 300px;
+  min-width: 85%;
   font-size: 1.5rem;
   padding: 20px;
-  max-width: 80%;
+
   margin-top: 3%;
 }
 .underline {
@@ -215,9 +216,6 @@ img {
     width: 100%;
   }
 
-  #recipe-container {
-    min-width: 350px;
-  }
   #image-6,
   #image-5 {
     display: none;
