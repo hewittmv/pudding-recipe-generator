@@ -218,7 +218,8 @@ img {
   #recipe-container {
     min-width: 350px;
   }
-  #image-6 {
+  #image-6,
+  #image-5 {
     display: none;
   }
 }
